@@ -127,6 +127,21 @@
     background-position: center;
 }
 
+.maps{
+    width: 100%;
+    height: 85vh;
+    padding-left: 11%;
+    padding-right: 8%;
+    position: relative;
+}
+
+#openlayermap{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
 /* Zuid-Korea */
 .header-zk{
     width: 100%;
@@ -142,18 +157,9 @@
     background-position: center;
 }
 
-.maps{
-    width: 100%;
-    height: 85vh;
-    padding-left: 11%;
-    padding-right: 8%;
-    position: relative;
-}
-
-#map{
+#leafletmap{
     height: 500px;
     width: 50%;
-    position: relative;
     margin: 50px;
     float: left;
 }
