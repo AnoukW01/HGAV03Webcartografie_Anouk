@@ -1,0 +1,38 @@
+/* Header */
+#header{
+    background-image: url(https://images.unsplash.com/photo-1603989165791-b846b349fe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
+}
+
+/* Row */
+.row{
+    height: 300vh;
+}
+
+/* OpenLayer map */
+#openLayerMap{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
+#map-text {
+    padding-top: 225px;
+}
+
+/* ArcGis Map */
+#arcGisMap{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
+/* Maplibre */
+#mapLibre{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
