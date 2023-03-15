@@ -33,6 +33,6 @@ require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig,
 var mapLibre = new maplibregl.Map({
     container: 'mapLibre',
     style: 'https://demotiles.maplibre.org/style.json', // stylesheet location
-    center: [174.5322907, -36.8862835], // starting position [lng, lat]
+    center: [169.97533871680452, -43.69689631783225], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
