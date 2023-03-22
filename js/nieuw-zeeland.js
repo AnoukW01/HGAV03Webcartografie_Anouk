@@ -4,13 +4,19 @@ const openLayerMap = new ol.Map({
     layers: [
         new ol.layer.Tile({
             source: new ol.source.OSM()
+        }),
+        new ol.layer.Vector({
+            source: new ol.source.Vector({
+                url: './data/data.json',
+                format: new ol.format.GeoJSON()
+            })
         })
     ],
     view: new ol.View({
         center: ol.proj.fromLonLat([174.5322907, -36.8862835]),
         zoom: 8
     })
-});
+})
 
 //ArcGIS kaart//
 require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig, Map, MapView) {
