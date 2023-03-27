@@ -3,19 +3,29 @@ const openLayerMap = new ol.Map({
     target: 'openLayerMap',
     layers: [
         new ol.layer.Tile({
-            source: new ol.source.OSM()
+            source: new ol.source.olm()
         }),
-        new ol.layer.Vector({
-            source: new ol.source.Vector({
-                url: './data/data.json',
-                format: new ol.format.GeoJSON()
-            })
-        })
     ],
     view: new ol.View({
         center: ol.proj.fromLonLat([174.5322907, -36.8862835]),
         zoom: 8
     })
+})
+
+fetch('../data/data.json', {})
+ .then((response) => response.json())
+ .then((json) => {
+    console.log(json)
+    
+    const VectorSource = new VectorSource({
+        features: new GeoJSON().readFeatures(geojsonObject),
+      });
+
+    const VectorLayer = new VectorLayer({
+        source: vectorSource,
+        style: styleFunction,
+      });
+      
 })
 
 //ArcGIS kaart//
