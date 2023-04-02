@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?><MD_Metadata xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:xalan="http://xml.apache.org/xalan" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml" xmlns="http://www.isotc211.org/2005/gmd">
+    <fileIdentifier>
+        <gco:CharacterString>1521502526621r835067507300886</gco:CharacterString>
+    </fileIdentifier>
+    <characterSet>
+        <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+    </characterSet>
+    <hierarchyLevel>
+        <MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" codeSpace="ISOTC211/19115">dataset</MD_ScopeCode>
+    </hierarchyLevel>
+    <hierarchyLevelName>
+        <gco:CharacterString>dataset</gco:CharacterString>
+    </hierarchyLevelName>
+    <contact>
+        <CI_ResponsibleParty>
+            <organisationName>
+                <gco:CharacterString>Department of Conservation Te Papa Atawhai</gco:CharacterString>
+            </organisationName>
+            <positionName>
+                <gco:CharacterString>Geospatial Services Team</gco:CharacterString>
+            </positionName>
+            <contactInfo>
+                <CI_Contact>
+                    <address>
+                        <CI_Address>
+                            <electronicMailAddress>
+                                <gco:CharacterString>geodata@doc.govt.nz</gco:CharacterString>
+                            </electronicMailAddress>
+                        </CI_Address>
+                    </address>
+                </CI_Contact>
+            </contactInfo>
+            <role>
+                <CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="resourceProvider" codeSpace="ISOTC211/19115">resourceProvider</CI_RoleCode>
+            </role>
+        </CI_ResponsibleParty>
+    </contact>
+    <dateStamp>
+        <gco:Date>2018-03-20</gco:Date>
+    </dateStamp>
+    <metadataStandardName>
+        <gco:CharacterString>ISO 19139 Geographic Information - Metadata - Implementation Specification</gco:CharacterString>
+    </metadataStandardName>
+    <metadataStandardVersion>
+        <gco:CharacterString>2007</gco:CharacterString>
+    </metadataStandardVersion>
+    <identificationInfo>
+        <MD_DataIdentification>
+            <citation>
+                <CI_Citation>
+                    <title>
+                        <gco:CharacterString>DOC Tracks</gco:CharacterString>
+                    </title>
+                    <date>
+                        <CI_Date>
+                            <date>
+                                <gco:Date>2018-03-20</gco:Date>
+                            </date>
+                            <dateType>
+                                <CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode" codeListValue="creation" codeSpace="ISOTC211/19115">creation</CI_DateTypeCode>
+                            </dateType>
+                        </CI_Date>
+                    </date>
+                </CI_Citation>
+            </citation>
+            <abstract>
+                <gco:CharacterString>Department of Conservation (DOC) - recreation track lines (approx. centreline). Dataset shows all tracks. If you intend to walk a track, please confirm with your local office or the DOC website that the track isn't under a temporary or more permanent closure before embarking.
+*****DISCLAIMER***** 
+1. DOC makes no express or implied warranties as to the accuracy or completeness of the data or information, nor its suitability for any purpose. Errors are inevitably part of any database, and can arise by a number of means, from errors during field data collection, to errors during data entry. 
+2. DOC makes no warranties or representations as to possible infringement upon copyrights or other intellectual property rights of others in the data or information. 
+3. DOC will not accept liability for any direct, indirect, special or consequential damages, losses or expenses howsoever arising and relating to use, or lack of use, of the data or information supplied. *****GUIDELINES FOR THE USE OF THE INFORMATION***** 
+4. Care should be taken in deriving conclusions from any data or information supplied. 
+5. Any use of the data or information supplied should state when the data or information was acquired and that it may now be out-of-date. 
+*****COPYRIGHT OBLIGATIONS***** 
+6. All proprietary rights to the intellectual property in the data or information remain with the Crown as its sole property. 
+7. Modification of the data and information or the addition of the information does not confer copyright or any other form of property of the original material to a user. 
+8. All maps or reports that are derived from the data or information must acknowledge the Crown copyright, in the following way: Crown Copyright: Department of Conservation Te Papa Atawhai [year]. 
+9. This information resource may be passed onto another party, in either hard copy or electronic form. If a user does this, then it is recommended that they also supply this metadata record with the information resource.
+*****LICENCE***** 
+This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA. 
+</gco:CharacterString>
+            </abstract>
+            <purpose>
+                <gco:CharacterString>Tracks maintained and managed by the Department of Conservation (DOC).</gco:CharacterString>
+            </purpose>
+            <descriptiveKeywords>
+                <MD_Keywords>
+                    <keyword>
+                        <gco:CharacterString>OpenData</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>DOC</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Tracks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Walks</gco:CharacterString>
+                    </keyword>
+                    <keyword>
+                        <gco:CharacterString>Recreation</gco:CharacterString>
+                    </keyword>
+                </MD_Keywords>
+            </descriptiveKeywords>
+            <language>
+                <LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng" codeSpace="ISO639-2">eng</LanguageCode>
+            </language>
+            <characterSet>
+                <MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" codeSpace="ISOTC211/19115">utf8</MD_CharacterSetCode>
+            </characterSet>
+            <topicCategory>
+                <MD_TopicCategoryCode>society</MD_TopicCategoryCode>
+            </topicCategory>
+            <topicCategory>
+                <MD_TopicCategoryCode>transportation</MD_TopicCategoryCode>
+            </topicCategory>
+        </MD_DataIdentification>
+    </identificationInfo>
+    <distributionInfo>
+        <MD_Distribution>
+            <transferOptions>
+                <MD_DigitalTransferOptions>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>https://api.doc.govt.nz</URL>
+                            </linkage>
+                            <name>
+                                <gco:CharacterString>DOC API</gco:CharacterString>
+                            </name>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" codeSpace="ISOTC211/19115">download</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onLine>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>https://mapserver.doc.govt.nz/arcgis/rest/services/DOCMaps/DOCMaps/MapServer</URL>
+                            </linkage>
+                            <name>
+                                <gco:CharacterString>ArcGIS Map Service</gco:CharacterString>
+                            </name>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" codeSpace="ISOTC211/19115">download</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onLine>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>https://dservices1.arcgis.com/3JjYDyG3oajxU6HO/arcgis/services/DOC_Tracks/WFSServer?service=wfs&amp;request=getcapabilities</URL>
+                            </linkage>
+                            <name>
+                                <gco:CharacterString>OGC WFS</gco:CharacterString>
+                            </name>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" codeSpace="ISOTC211/19115">download</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onLine>
+                    <onLine>
+                        <CI_OnlineResource>
+                            <linkage>
+                                <URL>https://deptconservation.maps.arcgis.com/sharing/rest/content/items/ca5361dbc403471280567731d1404e75/data</URL>
+                            </linkage>
+                            <name>
+                                <gco:CharacterString>GPX</gco:CharacterString>
+                            </name>
+                            <function>
+                                <CI_OnLineFunctionCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" codeSpace="ISOTC211/19115">download</CI_OnLineFunctionCode>
+                            </function>
+                        </CI_OnlineResource>
+                    </onLine>
+                </MD_DigitalTransferOptions>
+            </transferOptions>
+        </MD_Distribution>
+    </distributionInfo>
+</MD_Metadata>

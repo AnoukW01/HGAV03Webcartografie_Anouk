@@ -10,13 +10,11 @@ L.marker([37.566535, 126.9779692]).addTo(leafLet)
   .bindPopup('SEOUL')
   .openPopup();
 
-let firstAPIrequist = L.geoJSON().addTo(leafLet); 
-fetch('../data/southkorea.geojson') 
-  .then(response => response.json()) 
-  .then(data => 
-    { console.log(data);
-      firstAPIrequist.addData(data)
-      L.Control.geocoder().addTo(leafLet)
-     })
-
-
+let firstAPIrequest = L.geoJSON().addTo(leafLet); 
+fetch("https://raw.githubusercontent.com/AnoukW01/HGAV03Webcartografie_Anouk/main/data/southkorea.geojson", {})
+  .then(response => response.json())
+  .then(data => { 
+      console.log(data);
+      firstAPIrequest.addData(data)
+      L.Control.geocoder().addTo(leafLet)  
+  });
