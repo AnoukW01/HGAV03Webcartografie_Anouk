@@ -5,11 +5,31 @@
 
 /* Row */
 .row{
-    height: 300vh;
+    height: 500vh;
 }
 
 /* OpenLayer map */
 #openLayerMap{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
+.map-text {
+    padding-top: 225px;
+}
+
+/* Datawrapper */
+#datawrapper{
+    height: 500px;
+    width: 50%;
+    margin: 50px;
+    float: left;
+}
+
+/* Leaflet */
+#leafLetTracks{
     height: 500px;
     width: 50%;
     margin: 50px;

@@ -18,13 +18,28 @@ const openLayerMap = new ol.Map({
     })
 })
 
+//Leaflet kaart//
+const leafLet = L.map('leafLetTracks').setView([-36.8862835, 174.5322907], 6);
 
-//ArcGIS kaart//
-require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig, Map, MapView) {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(leafLet);
+
+L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
+    'layers': 'aeres_webcartografie:doc_tracks',
+    'styles': 'line',
+    'srs': 'CRS:84',
+    'format': 'image/png',
+    'opacity': '0,5',
+    'transparent': true,
+}).addTo(leafLet)
+
+//ArcGIS kaart// 
+require(["esri/config", "esri/Map", "esri/views/MapView", "esri/layers/WMSLayer"], function (esriConfig, Map, MapView, WMSLayer) {
 
 	esriConfig.apiKey = "AAPK6d1c65e750a94a5da99311d143af405cC8s5_iv42bD6dQ_GlPgL1SJDBrrJTvQX5_t_9KaoEsAsRMM5TrU0g5tESjukBIrX";
-
-	const arcGisMap = new Map({
+    
+    const arcGisMap = new Map({
 		basemap: "arcgis-topographic" 
 	});
 
@@ -34,7 +49,9 @@ require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig,
 		zoom: 8, 
 		container: "arcGisMap",
 	});
+
 });
+
 
 //Maplibre kaart//
 var mapLibre = new maplibregl.Map({
