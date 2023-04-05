@@ -1,8 +1,8 @@
 //Leaflet kaart//
 const leafLet = L.map('leafLet').setView([37.80369867390229, 126.98105880412463], 6);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme'
     }).addTo(leafLet);
 
 

@@ -21,8 +21,8 @@ const openLayerMap = new ol.Map({
 //Leaflet kaart//
 const leafLet = L.map('leafLetTracks').setView([-36.8862835, 174.5322907], 6);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Specialty/DeLorme_World_Base_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Copyright: &copy;2012 DeLorme'
     }).addTo(leafLet);
 
 L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
@@ -35,23 +35,30 @@ L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
 }).addTo(leafLet)
 
 //ArcGIS kaart// 
-require(["esri/config", "esri/Map", "esri/views/MapView", "esri/layers/WMSLayer"], function (esriConfig, Map, MapView, WMSLayer) {
+require(["esri/config", "esri/WebMap", "esri/views/MapView", "esri/widgets/ScaleBar", "esri/widgets/Legend", "esri/widgets/Legend"], function(esriConfig, WebMap, MapView, ScaleBar, Legend) {
 
-	esriConfig.apiKey = "AAPK6d1c65e750a94a5da99311d143af405cC8s5_iv42bD6dQ_GlPgL1SJDBrrJTvQX5_t_9KaoEsAsRMM5TrU0g5tESjukBIrX";
+esriConfig.apiKey = "AAPK6d1c65e750a94a5da99311d143af405cC8s5_iv42bD6dQ_GlPgL1SJDBrrJTvQX5_t_9KaoEsAsRMM5TrU0g5tESjukBIrX";
     
-    const arcGisMap = new Map({
-		basemap: "arcgis-topographic" 
-	});
-
-	const View = new MapView({
-		map: arcGisMap,
-		center: [174.5322907, -36.8862835], 
-		zoom: 8, 
-		container: "arcGisMap",
-	});
-
+const arcGisMap = new WebMap({
+    portalItem: {
+        id: "86848bf24c754eff94c2d455d309f990"
+    }
 });
 
+const view = new MapView({
+    container: "arcGisMap",
+    map: arcGisMap,
+    zoom: 8,
+});
+
+// Legenda
+const legend = new Legend({
+    view: view
+});
+
+// Legenda toevoegen ArcGIS kaart
+view.ui.add(legend, "bottom-left");
+}); 
 
 //Maplibre kaart//
 var mapLibre = new maplibregl.Map({
