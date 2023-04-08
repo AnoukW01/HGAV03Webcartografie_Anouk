@@ -39,7 +39,8 @@
               -41.2889974321582
             ]
           ],
-          "type": "LineString"
+          "type": "LineString",
+          "fill": "#a66034"
         }
       }
     ]

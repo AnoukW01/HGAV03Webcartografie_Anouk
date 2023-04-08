@@ -1,15 +1,15 @@
 /* Header */
-#header{
+#header {
     background-image: url(https://images.unsplash.com/photo-1603989165791-b846b349fe3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=873&q=80);
 }
 
 /* Row */
-.row{
-    height: 500vh;
+.row {
+    height: 450vh;
 }
 
 /* OpenLayer map */
-#openLayerMap{
+#openLayerMap {
     height: 500px;
     width: 50%;
     margin: 50px;
@@ -21,7 +21,7 @@
 }
 
 /* Datawrapper */
-#datawrapper{
+#datawrapper {
     height: 500px;
     width: 50%;
     margin: 50px;
@@ -29,7 +29,7 @@
 }
 
 /* Leaflet */
-#leafLetTracks{
+#leafLetTracks {
     height: 500px;
     width: 50%;
     margin: 50px;
@@ -41,7 +41,7 @@
 }
 
 /* ArcGis Map */
-#arcGisMap{
+#arcGisMap {
     height: 500px;
     width: 50%;
     margin: 50px;
@@ -49,10 +49,9 @@
 }
 
 /* Maplibre */
-#mapLibre{
+#mapLibre {
     height: 500px;
     width: 50%;
     margin: 50px;
     float: left;
 }
-

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
- <head>
+<head>
     <link rel='stylesheet' href="../css/main.css">
     <link rel="stylesheet" href="../css/nieuw-zeeland.css">
 
     <script src="https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css">
-    
+
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-    crossorigin=""></script>
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
 
@@ -21,25 +19,31 @@
     <link href='https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css' rel='stylesheet'>
 
     <title>Roadtrip Nieuw-Zeeland</title>
- </head>
+</head>
 
- <body>
+<body>
     <div id="content-container">
         <div id="header">
             <div id="menu-nav">
                 <ul>
-                    <li><a href="../index.html"><bold>HOME</bold></a></li>
-                    <li><a href="Zuid-Korea.html"><bold>ZUID-KOREA</bold></a></li>
-                   <li><a href="Nieuw-Zeeland.html"><bold>NIEUW-ZEELAND</bold></a></li>
+                    <li><a href="../index.html">
+                            <bold>HOME</bold>
+                        </a></li>
+                    <li><a href="zuid-korea.html">
+                            <bold>ZUID-KOREA</bold>
+                        </a></li>
+                    <li><a href="nieuw-zeeland.html">
+                            <bold>NIEUW-ZEELAND</bold>
+                        </a></li>
                 </ul>
                 <a href="contact.html"><button>Contact</button></a>
             </div>
-    
+
             <div id="side-nav">
                 <img src="../image/Logo Atlas website.jpg" id="logo">
                 <a href="#">INSPIRATIE</a>
             </div>
-            
+
             <div id="text-box">
                 <h1>Nieuw-Zeeland</h1>
                 <p>Een veranderend landschap</p>
@@ -50,50 +54,97 @@
             <div class="map-row">
                 <div id="openLayerMap"></div>
                 <div class="map-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>The Northern Express</h3>
+                    <p>Nieuw-Zeeland staat bekend om zijn schitterende natuur, maar ook om haar prachtige treinreizen.
+                        In Nieuw-Zeeland zijn er namelijk twee treinreizen die wij aanraden. Onze persoonlijke favoriet
+                        hierbij is toch the Northern Express. Deze treinrit bevindt zicht op het Noordereiland en start
+                        in Auckland. Het eindpunt van de trein is Wellington. De treinrit stopt nog op verschillende
+                        andere plekken, zoals Hamilton en Palmerston North. Ideaal voor als je tussendoor nog ergens
+                        anders verblijft. Hierbij is het wel goed om te weten dat niet iedere dag de trein rijdt.
+
+                        <br>
+
+                        <br>
+
+                        Gedurende rit kom je de mooiste landschappen tegen. Met een beetje geluk is het prachtig weer en
+                        kan je de mooiste plaatjes schieten.
+                    </p>
                 </div>
             </div>
             <div class="map-row">
                 <div id="datawrapper">
-                    <iframe title="Natuurfenomenen in Nieuw-Zeeland" aria-label="Locator maps" id="datawrapper-chart-ykHa0" src="https://datawrapper.dwcdn.net/ykHa0/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    <iframe title="Natuurfenomenen in Nieuw-Zeeland" aria-label="Locator maps"
+                        id="datawrapper-chart-ykHa0" src="https://datawrapper.dwcdn.net/ykHa0/1/" scrolling="no"
+                        frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"
+                        data-external="1"></iframe>
+                    <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (a) { if (void 0 !== a.data["datawrapper-height"]) { var e = document.querySelectorAll("iframe"); for (var t in a.data["datawrapper-height"]) for (var r = 0; r < e.length; r++)if (e[r].contentWindow === a.source) { var i = a.data["datawrapper-height"][t] + "px"; e[r].style.height = i } } })) }();
                     </script>
                 </div>
                 <div class="map-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Top 5 visits</h3>
+                    <p>Nieuw-Zeeland heeft veel te bieden qua natuur. Daarom mag een bezoekje aan de mooiste plekken
+                        niet vergeten worden. Hieronder is de top 5 te vinden van de mooiste natuurplekken in
+                        Nieuw-Zeeland.
+
+                        <br>
+
+                        <br>
+
+                    <ol>
+
+                        <li>Lake Tekapo: een prachtig meer omringd door pluimgrasland.</li>
+
+                        <li>Mount Tongariro: een actieve vulkaan die onderdeel uitmaakt van het national park Tongariro.
+                        </li>
+
+                        <li>Milford Sound: bezoek de fjorden. Hier vindt je de mooiste watervallen van de wereld.</li>
+
+                        <li>Abel Tasman Park: op zoek naar uitdaging? In het Abel Tasman Park kan je kajakken, wandelen
+                            of fietsen.</li>
+
+                        <li>Waitomo Caves: bezoek de grotten om op zoek te gaan naar de oplichtende beestjes.</li>
+
+                    </ol>
+                    </p>
                 </div>
             </div>
             <div class="map-row">
                 <div id="leafLetTracks"></div>
                 <div class="map-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>De ultieme track</h3>
+                    <p>Wanneer je op zoek bent naar een actieve roadtrip dan ben je ook bij Roadtrip Worldwide op het goede adres. Nieuw-Zeeland leent zich uitstekend voor sportievelingen. Nieuw-Zeeland heeft namelijk vele tracks (wandelpaden). Deze tracks variëren tussen korte en lange afstanden/tijden. Aan jou de keuze waar je ambitie ligt.</p>
                 </div>
             </div>
             <div class="map-row">
                 <div id="arcGisMap"></div>
                 <div class="map-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Wildkamperen?</h3>
+                    <p>Ben je meer een persoon die houdt van lekker touren met de camper? Wij bieden als organisatie ook vele camperroadtrips aan. Deze roadtrips houden in dat je uit verschillende routes kan kiezen. De route hebben wij eventueel al voor je uitgestippeld. Je bent zelf vrij om off grid te gaan of zelf je campings uit te kiezen om te verblijven. Nieuw-Zeeland biedt namelijk verschillende campingplaatsen aan. In Nieuw-Zeeland kan je ook wildkamperen echter is het hiervoor wel noodzakelijk om navraag te doen in welke mate dit mogelijk is.</p>
                 </div>
             </div>
             <div class="map-row">
                 <div id="mapLibre"></div>
                 <div class="map-text">
-                    <h3>Lorem ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3>Auckland: The city of sails</h3>
+                    <p>Een echte aanrader die wij willen meegeven is om ergens in je roadtrip Auckland te bezoeken.  Deze stad is ontzettend mooi en je kan veel doen. De stad staat bekend als the city of sails. In de haven liggen namelijk 135.000 jacten. Ook werd er al eens de America Cup gehouden voor het zeilen.
+
+                        <br>
+                        
+                        <br>
+                        
+                        Voor de rest kan je een bezoekje brengen aan Hobbiton, Waiheke Island of ga mee op een ecotour om walvissen en dolfijnen te spotten. Natuurlijk kan je ook lekker slenteren door de straten in Auckland. Aan jou de keuze.</p>
                 </div>
             </div>
-       </div>
+        </div>
 
         <div id="footer">
             <p>Copyright 2023 © Anouk Witteman</p>
         </div>
     </div>
 
- <script src="https://js.arcgis.com/4.26/"></script>
- <script src="../js/nieuw-zeeland.js"></script>
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <script src="../js/nieuw-zeeland.js"></script>
 
- </body>
+</body>
+
 </html>

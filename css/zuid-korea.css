@@ -1,22 +1,23 @@
 /* Header */
-#header{
+#header {
     background-image: url(https://images.unsplash.com/photo-1529883406927-e996c9ae3353?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
-} 
+}
 
 /* Row */
-.row{
-    height: 300vh;
+.row {
+    height: 175vh;
 }
 
 /* Flourish */
-#Flourish{
+#Flourish {
     height: 500px;
     width: 50%;
     margin: 50px;
     float: left;
 }
+
 /* Leaflet */
-#leafLet{
+#leafLet {
     height: 500px;
     width: 50%;
     margin: 50px;
@@ -26,4 +27,3 @@
 .map-text {
     padding-top: 225px;
 }
-
