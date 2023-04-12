@@ -102,17 +102,31 @@
     position: relative;
 }
 
-#context {
-    text-align: center;
-    color: #a66034;
-    font-size: 15px;
-    padding-left: 11%;
-    padding-right: 8%;
-    margin-top: 50px;
+#image {
+    height: 400px;
+    width: 70%;
+    margin: 50px;
+    float: right;
 }
 
-#image {
-    padding: 50px 50px 50px 50px;
+#context-text {
+    color: #a66034;
+    font-size: 17px;
+    width: 50%;
+    padding-top: 200px;
+    padding-right: 8%;
+}
+
+#context-text button {
+    background: #a66034;
+    color: #fbfbf8;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
 }
 
 .map-row {

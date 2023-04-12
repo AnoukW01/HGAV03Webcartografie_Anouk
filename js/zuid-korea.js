@@ -18,5 +18,6 @@ fetch("https://raw.githubusercontent.com/AnoukW01/HGAV03Webcartografie_Anouk/mai
   .then(data => {
     console.log(data);
     firstAPIrequest.addData(data)
-    L.Control.geocoder().addTo(leafLet)
   });
+
+L.Control.geocoder().addTo(leafLet)

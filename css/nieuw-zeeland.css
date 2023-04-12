@@ -48,6 +48,18 @@
     float: left;
 }
 
+#legend {
+    padding: 10px;
+    background-color: #fff;
+}
+
+#dropDownButtonContainer {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 100;
+}
+
 /* Maplibre */
 #mapLibre {
     height: 500px;

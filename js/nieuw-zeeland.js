@@ -40,8 +40,9 @@ L.tileLayer.wms('http://localhost:8001/geoserver/ows', {
     'transparent': true,
 }).addTo(leafLet)
 
+
 //ArcGIS kaart// 
-require(["esri/config", "esri/WebMap", "esri/views/MapView", "esri/widgets/ScaleBar", "esri/widgets/Legend", "esri/widgets/Legend"], function (esriConfig, WebMap, MapView, ScaleBar, Legend) {
+require(["esri/config", "esri/WebMap", "esri/views/MapView", "esri/widgets/ScaleBar", "esri/widgets/LayerList"], function (esriConfig, WebMap, MapView, ScaleBar, LayerList) {
 
     esriConfig.apiKey = "AAPK6d1c65e750a94a5da99311d143af405cC8s5_iv42bD6dQ_GlPgL1SJDBrrJTvQX5_t_9KaoEsAsRMM5TrU0g5tESjukBIrX";
 
@@ -57,18 +58,22 @@ require(["esri/config", "esri/WebMap", "esri/views/MapView", "esri/widgets/Scale
         zoom: 4,
     });
 
-    // Legenda
-    const legend = new Legend({
-        view: view
+    // Add a legend instance to the panel of a
+    // ListItem in a LayerList instance
+    const layerList = new LayerList({
+        view: view,
+        listItemCreatedFunction: (event) => {
+            const item = event.item;
+            if (item.layer.type != "group") {
+                // don't show legend twice
+                item.panel = {
+                    content: "legend",
+                    open: true,
+                };
+            }
+        }
     });
-
-    // Legenda toevoegen ArcGIS kaart
-    view.ui.add(legend, "bottom-left");
-
-    view.on("click", function(event){
-        // event is the event handle returned after the event fires.
-        console.log(event.mapPoint);
-      });
+    view.ui.add(layerList, "bottom-right");
 });
 
 
